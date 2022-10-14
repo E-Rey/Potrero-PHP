@@ -1,0 +1,103 @@
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:100,400,700");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #33cc55;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1em;
+  background-image: url("https://negativespace.co/wp-content/uploads/2020/06/negative-space-abstract-vertical-gradient-wallpaper-1-2048x1313.jpg");
+  background-size: cover;
+}
+
+.login-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /*Define la altura maxima del visualizacion*/
+}
+.login-base > section {
+  flex: 0 1 auto;
+  width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-base > section header {
+  text-align: center;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.login-base > section header h1 {
+  font-weight: normal;
+}
+.login-base > section header img {
+  margin-bottom: 10px;
+}
+
+.login-base > section header h1::after {
+  content: "";
+  display: block;
+  padding: 2px;
+  background-color: #fff;
+  width: 15%;
+  margin: auto;
+}
+
+.login-base section main,
+.login-base section footer {
+  margin: auto;
+  width: 80%;
+}
+
+.login-base section main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-base section main form label {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 5px;
+}
+.login-base section main form label > input {
+  border: none;
+  flex: 1 1 auto;
+  padding: 16px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.login-base section main form label i {
+  position: relative;
+  margin: 0px 0px auto;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 17px;
+  border-radius: 0 3px 3px 0px;
+}
+.login-base section main form input[type="submit"] {
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 1em;
+  background-color: #000;
+  color: #fff;
+}
+
+.login-base section footer {
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding: 15px 0px;
+  text-align: right;
+}
+.login-base section footer a {
+  color: #fff;
+  text-decoration: none;
+}
